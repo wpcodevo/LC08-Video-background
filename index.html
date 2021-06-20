@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Background Video</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <div class="logo">
+          <img src="./assets/jet.svg" alt="" />
+          <span>Discover</span>
+        </div>
+        <div class="icon"></div>
+      </header>
+
+      <video src="./assets/Bg-Video.m4v" muted loop autoplay></video>
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h1>Video Background</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quas
+          quia dolor nihil alias dolore nostrum voluptates rerum fugiat dicta.
+        </p>
+        <a href="#">Dicover more</a>
+      </div>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".icon");
+      const container = document.querySelector(".container");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        container.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
